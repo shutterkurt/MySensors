@@ -1,6 +1,7 @@
 [Unit]
 Description=MySensors Gateway daemon
 Requires=network.target
+After=multi-user.target
 
 [Service]
 ExecStart=%gateway_dir%/mysgw -q
